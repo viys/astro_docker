@@ -1,9 +1,7 @@
-version: "3.9"
-
 services:
   astro:
     build: .
-    container_name: astro-dev
+    # container_name: astro-dev
     working_dir: /app
     environment:
       CHOKIDAR_USEPOLLING: 'true'

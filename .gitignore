@@ -1,6 +1,8 @@
 # build output
 dist/
 # generated types
+.vscode/
+.pnpm-store/
 .astro/
 
 # dependencies

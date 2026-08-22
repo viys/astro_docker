@@ -35,6 +35,21 @@ Static assets, like favicons, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
+### Docker development environment
+
+On Windows, run:
+
+```powershell
+.\start.ps1
+```
+
+On macOS, install and start Docker Desktop, then run:
+
+```bash
+chmod +x ./start.sh
+./start.sh
+```
+
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `pnpm install`             | Installs dependencies                            |

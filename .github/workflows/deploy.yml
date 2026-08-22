@@ -24,8 +24,8 @@ jobs:
         uses: withastro/action@v3
         with:
           # path: . # 存储库中 Astro 项目的根位置。（可选）
-          node-version: 20 # 用于构建站点的特定 Node.js 版本，默认为 20。（可选）
-          package-manager: pnpm@latest # 应使用哪个 Node.js 包管理器来安装依赖项和构建站点。会根据存储库中的 lockfile 自动检测。（可选）
+          node-version: 22 # pnpm 及 Astro 构建使用的 Node.js LTS 版本
+          package-manager: pnpm@10 # 固定主版本，避免 latest 与 Node.js 不兼容
 
   deploy:
     needs: build
